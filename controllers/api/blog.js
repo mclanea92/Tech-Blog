@@ -50,10 +50,10 @@ router.delete('/:id', async (req, res) => {
             }
         });
         if (deleteData) {
-            res.status(200).send('Post has been deleted')
+            res.status(200).end(); // .send('Post has been deleted')
         }
         else{
-            res.status(400).send('No post deleted, please try again')
+            res.status(400).end()    //.send('No post deleted, please try again')
         }
     }
     catch (err) {
