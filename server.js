@@ -18,7 +18,7 @@ const newSession = {
 };
 
 
-app.engine(".hbs", expressHbs({ extname: ".hbs" }));
+app.engine(".hbs", expressHbs.engine({ extname: ".hbs" }));
 
 app.set("view engine", ".hbs");
 
